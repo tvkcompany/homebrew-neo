@@ -1,3 +1,3 @@
-# homebrew-neo
+# Neo CLI - Homebrew Tap
 
-Homebrew formula for the Neo CLI.
+This repository contains the [Homebrew](https://brew.sh) formula for installing the Neo CLI.
