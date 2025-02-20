@@ -26,9 +26,3 @@ jobs:
 
           # Capture the output for the PR comment
           echo "Neo CLI version: $(neo -v)" >> $GITHUB_STEP_SUMMARY
-
-      - name: Clean up
-        if: always()
-        run: |
-          brew uninstall neo || true
-          brew untap tvkcompany/neo || true
