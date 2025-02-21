@@ -1,23 +1,23 @@
 class Neo < Formula
   desc "Neo CLI"
   homepage "https://tvk.company"
-  version "0.3.1"
+  version "0.3.2"
   license "Proprietary"
 
   on_macos do
-    url "https://github.com/tvkcompany/neo_cli/releases/download/0.3.1/neo_cli_0_3_1_macos_universal.tar.gz"
-    sha256 "c4db99caade02eee78502fc0663e0522f97cc9ecbaf8507787cd98f0203785d6"
+    url "https://github.com/tvkcompany/neo_cli/releases/download/0.3.2/neo_cli_0_3_2_macos_universal.tar.gz"
+    sha256 "caee68e6a2792c99b2fcacd5ed76aa9a035e0e236299553bbe880e52f042069f"
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/tvkcompany/neo_cli/releases/download/0.3.1/neo_cli_0_3_1_linux_amd64.tar.gz"
-      sha256 "81e829875c7849b5fcf4610f47fec0c1db62db69b93acbf3eddab25f3b84ddfd"
+      url "https://github.com/tvkcompany/neo_cli/releases/download/0.3.2/neo_cli_0_3_2_linux_amd64.tar.gz"
+      sha256 "2fedf55c51ab78402d4d3595b079273023e90b8c13b0558276b28f8b90319ee6"
     end
     
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tvkcompany/neo_cli/releases/download/0.3.1/neo_cli_0_3_1_linux_arm64.tar.gz"
-      sha256 "176a59bafebad1e4acb2219e3c8fd1c266344db4098428c5bc991187ce0728d3"
+      url "https://github.com/tvkcompany/neo_cli/releases/download/0.3.2/neo_cli_0_3_2_linux_arm64.tar.gz"
+      sha256 "0d335c3d394c05aa6af0802894ad5be45c6368c38f85caf32f094695088b26c6"
     end
   end
 
